@@ -50,9 +50,7 @@ int main (int argv, char* args[]) {
     string line;
     vector<Sentence> AllSentence;
     while (getline(corpusFile,line)) {
-        if (line.empty()) {
-            break;
-        }
+        
         vector<string> tempstr;
         tempstr = tokenizer(line);
         for (string &str : tempstr) {
